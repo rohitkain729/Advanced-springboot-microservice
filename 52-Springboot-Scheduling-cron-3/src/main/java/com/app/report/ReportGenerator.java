@@ -26,10 +26,30 @@ public class ReportGenerator {
 //		System.out.println("---report---" + new Date());
 //	}
 	
-	@Scheduled(cron = "0/12 1/2 16 * * *")   //at 4pm at  1st min  continue at 0 sec  
-	//,12 sec gap till 4.2 hr comes and stops then continue the task at 2min gap
-	// 4.3hr start at 0 sec ,12 sec 24 sec.... continueas it is.
+//	@Scheduled(cron = "0/12 1/2 16 * * *")   //at 4pm at  1st min  continue at 0 sec  
+//	//,12 sec gap till 4.2 hr comes and stops then continue the task at 2min gap
+//	// 4.3hr start at 0 sec ,12 sec 24 sec.... continueas it is.
+//
+//	public void generateReport() {
+//		System.out.println("---report---" + new Date());
+//	}
+	
+//	@Scheduled(cron = "0 0 10 * * SAT,SUN")   // sat sun at 10am
+//	public void generateReport() {
+//		System.out.println("---report---" + new Date());
+//	}
 
+//	@Scheduled(cron = "0 0 10 ? * SAT,SUN")   // sat sun at 10am
+//	public void generateReport() {
+//		System.out.println("---report---" + new Date());
+//	}
+	
+
+//	@Scheduled(cron = "0 0 10 ? * SAT")   // sat  at 10am
+//	public void generateReport() {
+//		System.out.println("---report---" + new Date());
+//	}
+	@Scheduled(cron = "0 0 10 ? * SUN")   //  sun at 10am
 	public void generateReport() {
 		System.out.println("---report---" + new Date());
 	}
