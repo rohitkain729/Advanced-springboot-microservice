@@ -54,14 +54,15 @@ public class ReportGenerator {
 		System.out.println("sales report  ::" + new Date());
 	}*/
 
-	@Scheduled(initialDelay = 4000,fixedDelay  = 3000,fixedRate = 2000)
-	public void generateReport() {
-		System.out.println("inital time ::" + new Date());
-		try {
-			Thread.sleep(1000);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		System.out.println("sales report  ::" + new Date());
+	@Scheduled(initialDelay = 4000, fixedDelay = 3000)
+	public void generateReport1() {
+		System.out.println("sales report 1 of::" + new Date() + " ------1--");
+		System.out.println("thread name" + Thread.currentThread().getName() + Thread.currentThread().hashCode());
+	}
+
+	@Scheduled(initialDelay = 5000, fixedRate = 4000)
+	public void generateReport2() {
+		System.out.println("sales report 2 of::" + new Date() + " ----2----");
+		System.out.println("thread name" + Thread.currentThread().getName() + Thread.currentThread().hashCode());
 	}
 }
