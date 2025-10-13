@@ -27,11 +27,13 @@ public class ReportGenerator {
 		System.out.println("sale report 2-------" + new Date() + "-------------");
 	}
 	
-	
-
-	@Scheduled(cron = "* 18 8 * * *")  // every minute 15th sec   8am :18 min : eevry sec  : every day :every month :every year :every weekend
+	@Scheduled(cron = "* 18 8 * * *")  // every minute 15th sec   8am :18 min : every sec  : every day :every month :every year :every weekend
 	public void generateReport3() { 
-
+		System.out.println("sale report 2-------" + new Date() + "-------------");
+	}
+	
+	@Scheduled(cron = "10 * 8 * * *")  // every minute 15th sec   8am :every min : 10th sec  : every day :every month :every year :every weekend
+	public void generateReport4() { 
 		System.out.println("sale report 2-------" + new Date() + "-------------");
 	}
 
