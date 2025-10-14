@@ -49,11 +49,17 @@ public class ReportGenerator {
 //	public void generateReport() {
 //		System.out.println("---report---" + new Date());
 //	}
-	@Scheduled(cron = "0 0 10 ? * SUN")   //  sun at 10am
+	
+
+//	@Scheduled(cron = "0 0 10 ? * SUN")   //  sun at 10am
+//	public void generateReport() {
+//		System.out.println("---report---" + new Date());
+//	}
+
+	// 9:54  mon 2st	
+	@Scheduled(cron = "10 3 22 ? * 1#2")   //  2nd monday 10:3:10
 	public void generateReport() {
 		System.out.println("---report---" + new Date());
 	}
-
-	
 	
 }
